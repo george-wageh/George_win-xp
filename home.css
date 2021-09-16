@@ -1,0 +1,296 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    background-image: url("img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+}
+.task {
+    background-color: #2160de;
+    height: 40px;
+    position: absolute;
+    display: block;
+    border-top: white 2px solid;
+    width: 100%;
+    bottom: 0px;
+}
+.icons {
+    padding-top: 20px;
+    padding-left: 25px;
+    overflow: hidden;
+}
+.icon {
+    width: 75px;
+    overflow: hidden;
+}
+.icon img {
+    height: 60px;
+}
+.icon p {
+    margin: 0px;
+    color: white;
+    width: 62px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.start img {
+    opacity: 0.95;
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+}
+.start img:hover {
+    filter: brightness(1.2);
+}
+.icon img:hover {
+    border: blue 1px dotted;
+    background-color: rgba(255, 255, 255, 0.096);
+}
+.icon img:active {
+    border: blue 1px dotted;
+    background-color: rgba(0, 0, 255, 0.253);
+}
+.start_menu {
+    background-color: #578efc;
+
+    position: absolute;
+    bottom: 45px;
+    width: 410px;
+    height: 550px;
+    left: 1px;
+    border: rgb(0, 153, 255) 2px solid;
+    border-radius: 5px;
+}
+.start_menu .left {
+    position: absolute;
+    margin-top: 60px;
+    width: 205px;
+    height: 430px;
+    background-color: white;
+    border-right: rgb(18, 101, 255) 3px solid;
+}
+.right {
+    position: absolute;
+    width: 205px;
+    margin-top: 60px;
+    height: 430px;
+    background-color: rgba(255, 255, 255, 0.534);
+    right: 0px;
+}
+.top {
+    position: absolute;
+    width: 410px;
+    height: 60px;
+    background-color: #578efc;
+    top: 0px;
+}
+.bottom {
+    position: absolute;
+    width: 410px;
+    height: 60px;
+    background-color: #578efc;
+    bottom: 0px;
+}
+.top img {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 45px;
+    border: white 2px solid;
+    border-radius: 5px;
+}
+.top p {
+    margin: 0px;
+    position: absolute;
+    display: inline;
+    top: 17px;
+    margin-left: 7px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.con {
+    cursor: pointer;
+    position: relative;
+    margin-top: 3px;
+    width: 190px;
+    margin-left: 7px;
+}
+.con:hover {
+    background-color: #2f71cd;
+    color: white;
+}
+.main:focus {
+    border: 50px solid red;
+}
+
+.con img {
+    width: 40px;
+}
+.con p {
+    position: absolute;
+    top: 11px;
+    margin: 0px;
+    margin-left: 4px;
+    display: inline;
+    text-transform: capitalize;
+}
+.window {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    top: 100px;
+    left: 450px;
+    position: absolute;
+    width: 820px;
+    height: 580px;
+    border: 4px solid #123de6;
+}
+.window .options {
+    z-index: 2;
+    position: absolute;
+    top: 34px;
+    width: 100%;
+    height: 23px;
+    background-color: #ede8cd;
+    border-bottom: 2px solid white;
+}
+.function_bar {
+    position: absolute;
+    z-index: 2;
+    top: 59px;
+    width: 100%;
+    height: 48px;
+    background-color: #ede8cd;
+    border-bottom: 2px rgb(0, 0, 0) solid;
+}
+.window .title {
+    position: relative;
+    background-color: #123de6;
+    z-index: 2;
+}
+.title img {
+    width: 25px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.title p {
+    text-transform: capitalize;
+    color: white;
+    margin: 0px;
+    font-weight: 600;
+    position: absolute;
+    top: 7px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.title .control_w img {
+    width: 25px;
+}
+.title .control_w {
+    position: absolute;
+    top: -2px;
+    right: 3px;
+}
+.title .control_w img:hover {
+    filter: brightness(1.2);
+}
+.options p {
+    margin: 0px;
+    text-transform: capitalize;
+    display: inline;
+    font-size: 15px;
+    padding-top: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+}
+.options p:hover {
+    background-color: #1660e8;
+    color: white;
+}
+.function_bar p {
+    position: relative;
+    bottom: 12px;
+    display: inline-block;
+}
+
+.function_bar div {
+    display: inline-block;
+}
+.window .main_w {
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.window .main_w .left .menus {
+    position: absolute;
+    top: 115px;
+
+    width: 100%;
+    height: fit-content;
+}
+
+.window .main_w .left {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    background-color: #7389fe;
+}
+.window .main_w .left .menu {
+    margin-top: 15px;
+    height: 95px;
+    width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b3c7fb;
+    border-top: 30px solid rgba(255, 255, 255, 0.397);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.left .menus .menu .title_w {
+    position: relative;
+    color: rgb(12, 50, 125);
+    font-size: 14px;
+    top: -23px;
+    margin: 0px;
+    margin-left: 12px;
+    font-weight: 600;
+}
+.left .menus .menu .item {
+    position: relative;
+    top: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.left .menus .menu .item img {
+    width: 22px;
+}
+.left .menus .menu .item p {
+    position: relative;
+    bottom: 5px;
+    margin: 0px;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.left .menus .menu .item p:hover {
+   text-decoration: underline;
+   cursor:pointer ;
+}
+.left .menus .menu .item hr {
+    margin: 0px;
+    border-top: 1px solid rgb(0 67 255 / 50%);
+    border-bottom: none;
+    margin-bottom: 1px;
+}
